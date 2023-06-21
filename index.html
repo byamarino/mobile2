@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Raleway;wght@400;700&display=swap" rel="stylesheet">
+    <!--Primeiro link do carrossel-->
+    <link href="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="style.css">
     <title>AluraBooks</title>
 </head>
@@ -21,7 +24,7 @@
             </label>
             <ul class="lista-menu">
                 <li class="lista-menu__titulo">Categoria</li>
-                <li class="lista-menu-item">
+                <li class="lista-menu__item">
                     <a href="#" class="lista-menu__link">Programação</a>
                 </li>
                 <li class="lista-menu__item">
@@ -45,16 +48,13 @@
                 <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
                 </div>
     </header>
-</body>
-</html>
-         
-               
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__texto">Encontre em nossa estante o que você precisa para o seu desenvolvimento</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
 
-    
-
-
-
-<!-- Parte referente ao código html do carrossel-->
+     <!-- Parte referente ao código html do carrossel-->
 
 <section class="carrossel">
     <h2 class="carrossel__titulo">Novos lançamentos</h2>
@@ -82,7 +82,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle,min.js"></script>
 
 <script>
-    const swiper   ('.swiper',{
+    const swiper = new Swiper('.swiper',{
     spaceBetween: 10,
     slidesPerView: 3,
     pagination: {
@@ -92,4 +92,10 @@
     });
    </script>
 </body>
-</html>
+</html>    
+               
+
+    
+
+
+
