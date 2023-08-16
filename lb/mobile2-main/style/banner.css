@@ -1,5 +1,5 @@
 .banner{
-    background: rgb(131, 131, 230);
+    background: var(--azul-degrade);
     color: var(--branco);
     align-items: center;
     padding: 2.5em 2em;
